@@ -50,7 +50,7 @@ select,input {
     cursor: pointer;
 
 }
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 button {
     background: #772FD3;
     border-radius: 5px;
@@ -101,7 +101,7 @@ section {
 
 }
 
-.currency-value {
+.currency-value,.currency-value-to-convert {
     color: #555555;
     font-weight: 700;
     font-size:20px ;

@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-</head>
+       
+
+    </head>
 
 <body>
 
@@ -27,9 +29,10 @@
 
         <label>
             Converter <b>Para</b>
-            <select>
-                <option> US$ Dólar americano </option>
-                <option> € Euro </option>
+            <select class="currency-select">
+                <option value="dolar"> US$ Dólar americano </option>
+                <option value="euro"> € Euro </option>
+                <option value="Libra">Libra</option>
 
 
             </select>
@@ -39,24 +42,24 @@
         <label for="">
             valor 
 
-            <input placeholder="R$ 10.000,00"
+            <input class="input-currency" placeholder="R$ 10.000,00"
 
         </label>
 
-        <button>Converter</button>
+        <button class="convert-button">Converter</button>
         <section>
             <div class="currency-box">
                 <img src="./assets/brasil 2.png" alt="logo-moeda-a-converter"> 
                 <p class="currency">Real</p>
-                <p class="currency-value">R$ 0 </p>
+                <p class="currency-value-to-convert">R$ 0 </p>
             </div>
 
             <img src="./assets/arrow.svg" alt="seta" class="arrow-img">
 
 
             <div class="currency-box">
-                <img src="./assets/united-states.png" alt="logo-moeda-convertida"> 
-                <p class="currency">Dólar</p>
+                <img " src="./assets/united-states.png" alt="logo-moeda-convertida" class="currency-img"> 
+                <p class="currency" id="currency-name">Dólar americano</p>
                 <p class="currency-value" >US$ 0 </p>
             </div>
         </section>
@@ -66,5 +69,8 @@
 
 
 </body>
+<script src="./scripts.js"></script>
+
+
 
 </html>
